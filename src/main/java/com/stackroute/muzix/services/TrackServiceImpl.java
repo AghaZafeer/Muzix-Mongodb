@@ -51,7 +51,7 @@ public class TrackServiceImpl implements TrackService {
 
     @Override
     public Track getTrackById(int id) {
-        return trackRepository.getOne(id);
+        return trackRepository.findById(id).get();
 
 
     }
